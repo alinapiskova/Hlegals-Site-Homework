@@ -1,0 +1,50 @@
+
+
+
+@mixin text-headline{
+  font-size: 4.2rem;
+  line-height: (50/42);
+}
+@mixin text-title {
+  font-size: 3.2rem;
+  line-height: (38/32);
+}
+@mixin text-subheader {
+  font-size: 2.4rem;
+  line-height: (28/24);
+}
+@mixin text-caption {
+  font-size: 1.8rem;
+  line-height: (21/18);
+}
+@mixin text-small {
+  font-size: 1.4rem;
+  line-height: (17/14);
+}
+@mixin text-body {
+  font-size: 1.8rem;
+  line-height: (26/18);
+}
+
+.ul{
+  li{
+    padding-left: 60px;
+    position: relative;
+    &::before{
+      content: ' ';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color:#F0145A;
+      padding-right: 10px;
+      display: inline-block;
+      position: absolute;
+    }
+
+  }
+}
+.ol{
+  li{
+
+  }
+}
