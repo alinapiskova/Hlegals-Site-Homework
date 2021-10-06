@@ -1,0 +1,56 @@
+.partners__title{
+  text-align: center;
+  padding: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @include text-small;
+  font-weight: 500;
+}
+.cooperation{
+  display: flex;
+  flex-wrap: wrap;
+  //margin-bottom: 40px;
+}
+.logo__size{
+  height: 120px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__hillel{
+  background-color:#1C4280;
+}
+.logo__wanna-biz{
+  background-color:#143646;
+}
+.logo__tapgerine{
+  background-color: #F48B30;
+}
+.logo__3d-look{
+  background-color: #9E4DC3;
+}
+.logo__orangear{
+  background-color: #FD9339;
+}
+.logo__adtelligent{
+  background-color: #E2E2E4;
+}
+.logo__clickky{
+  background-color: #C71C36;
+}
+.logo__eco-leasing{
+  background-color: #DCF3F9;
+}
+.logo__infra-tek{
+  background-color: #EAEAEA;
+}
+.logo__city-park{
+  background-color: #282240;
+}
+.logo__art-print-studio{
+  background-color: #1D4568;
+}
+.logo__ultimate-card{
+  background-color: #000000;
+}

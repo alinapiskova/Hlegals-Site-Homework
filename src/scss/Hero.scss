@@ -1,0 +1,130 @@
+.container{
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero__wrapper{
+  background-image: var(--gradient-soft);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.container__wrapper {
+  flex-grow: 1;
+  background-image: url("../images/symbol-long-big.svg"), url("../images/wrapper-hero.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  //background-size: 100% 200px, auto, 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__container{
+  display: grid;
+  grid-template:
+          "logo info" 24px
+          "logo nav" 21px/155px 542px;
+  gap: 16px;
+  &:first-child{
+    column-gap: 623px;
+  }
+}
+.logo{
+  grid-area: logo;
+}
+.lang-switcher{
+  display: inline-block;
+}
+.lang-switcher__button{
+  cursor: pointer;
+  &:focus-within{
+    border-color:var(--color-accent-1-800);
+    border: 1px solid;
+  }
+}
+.lang-switcher__radio{
+  appearance: none;
+  position: absolute;
+  &:checked ~.lang-switcher__text{
+    background-color: var(--color-accent-1-800);
+  }
+}
+.lang-switcher__text{
+  font-weight: 700;
+  @include text-small-scale;
+  color: var(--color-accent-2-100);
+  letter-spacing: 1px;
+  padding: 5px 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.3s background-color;
+}
+.header__info{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  grid-area: info;
+}
+.header__info-external{
+  @include text-medium;
+  color: var(--color-accent-2-100);
+  align-self: flex-end;
+}
+.header__info-external--accent{
+  &::after{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:var(--color-accent-2-100);
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+}
+.header__navigation{
+  align-self: flex-end;
+  grid-area: nav;
+
+}
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+  @include text-caption;
+  color: var(--color-accent-2-100);
+}
+
+.hero__title{
+  color: var(--color-accent-2-100);
+  @include text-title-hero;
+  font-weight: 400;
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 50%;
+
+
+}
+.hero__next{
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+}
+.hero__next--img{
+
+
+}

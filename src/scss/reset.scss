@@ -382,9 +382,7 @@ button{
   counter-increment: none;
   counter-reset: none;
   cue: none;
-  cue-after: none;
-  cue-before: none;
-  cursor: auto;
+   cursor: auto;
   direction: ltr;
   display: block;
   elevation: level;
@@ -393,7 +391,6 @@ button{
   font-weight: normal;
   font-variant: normal;
   font-style: normal;
-  font-family: normal;
   height: auto;
   left: auto;
   letter-spacing: none;
@@ -428,7 +425,6 @@ button{
   vertical-align: baseline;
   visibility: visible;
   white-space: normal;
-  windows: 2;
   width: auto;
   z-index: auto;
 }

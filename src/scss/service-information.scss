@@ -1,0 +1,152 @@
+.service-information__wrapper{
+  background-image: var(--gradient-supersoft);
+  border-radius: 0 0 12px 12px;
+}
+.service-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+}
+.service-information__headline--container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50rem;
+}
+.service-information__headline{
+  cursor: pointer;
+  padding-bottom: 20px;
+  text-align: right;
+  margin-right: 40px;
+  position: relative;
+  border-right: 4px solid #E6E6F0;
+  padding-right: 40px;
+  &:last-of-type{
+    padding-bottom: 0;
+  }
+  &:focus-within{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-redtext);
+    border-right: 4px solid #F0145A;
+  }
+
+}
+.service-information__headline--title {
+  font-weight: 700;
+  @include text-headline;
+  color: var(--color-secondary-800);
+
+  }
+.service-information__headline--position{
+  appearance: none;
+  &:checked~.service-information__headline--title{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-redtext);
+  }
+}
+.info__caption{
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+}
+.info__caption--title{
+  color: var(--color-accent-2-100);
+  font-weight: 500;
+  @include text-title;
+  padding-bottom: 20px;
+}
+.info__caption--text{
+  font-weight: 400;
+  @include introduction;
+  color:var(--color-accent-2-100);
+}
+
+
+
+
+
+.link{
+  text-transform: uppercase;
+  @include text-small;
+  font-weight: 400;
+  padding: 5px;
+  &::after{
+    content: '>';
+    display: inline-block;
+    position: absolute;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+}
+.link__grey{
+  color: var(--color-accent-2-100);
+  opacity: 0.5;
+  &::after{
+    color: var(--color-accent-2-100);
+    opacity: 0.5;
+  }
+}
+.service-information__guidebook--title{
+  @include text-headline;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--gradient-redtext);
+  margin-bottom: 8px;
+
+}
+.guidebook{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  padding-top: 60px;
+  row-gap: 58px;
+}
+.guidebook__cards{
+  width: 413px;
+}
+.guidebook__img{
+  background-color:var(--color-accent-2-100);
+  border-radius: 24px;
+  padding: 14px;
+}
+.guidebook__img--last{
+  padding: 22px;
+}
+.guidebook__title{
+  margin-bottom: 15px;
+  margin-top: 20px;
+  text-align: left;
+  @include text-subheader;
+  color: var(--color-primary-300);
+}
+.guidebook__caption{
+  @include text-body;
+  color: var(--color-accent-2-100);
+  font-weight: 400;
+}
+.service-information__guidebook--background-out{
+  border-radius: 0 0 12px 12px;
+  background-color: var(--color-secondary-300);
+  width: 97%;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.service-information__guidebook--background-outside{
+  border-radius: 0 0 12px 12px;
+  background-color: var(--color-secondary-200);
+  width: 94%;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}

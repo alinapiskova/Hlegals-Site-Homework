@@ -1,0 +1,139 @@
+.teams{
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  background-color: var(--color-secondary-100);
+  margin-bottom: 20px;
+}
+.team-leader__photo{
+  min-height: 413px;
+}
+.teams__info{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+
+}
+.teams__info--title{
+  margin-top: 3px;
+  margin-bottom: 20px;
+  @include text-headline;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--gradient-redtext);
+}
+.team-leader__name {
+  @include text-caption;
+  font-weight: 400;
+  color: var(--color-secondary-800);
+  padding-bottom: 5px;
+}
+.team-leader__position{
+  @include text-medium;
+  font-weight: 400;
+  color: var(--color-secondary-800);
+
+}
+.link__blue{
+  color: var(--color-primary-300);
+  &::after{
+    color: var(--color-primary-300);
+  }
+}
+.successful-cases{
+  display: grid;
+  grid-template:
+                "title title wanna-biz wanna-biz tapgerine" 1fr
+                "hillel hillel wanna-biz wanna-biz tapgerine" 3fr
+                "d-look adtelligent adtelligent clikky clikky " 3fr/3fr 1fr 3fr 1fr 4fr;
+  border-radius:12px;
+  background-color: var(--color-secondary-100);
+  border: 1px solid var(--color-accent-2-100);
+  margin-top: 30px;
+}
+.successful-cases__position{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.successful-cases__title{
+  grid-area: title;
+  border: 1px solid var(--color-accent-2-100);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-accent-1-800);
+  @include text-small;
+  font-weight: 500;
+  padding: 20px;
+}
+.successful-cases__hillel-it-school{
+  grid-area: hillel;
+  border: 1px solid var(--color-accent-2-100);
+}
+.successful-cases__wanna-biz{
+  grid-area: wanna-biz;
+  border: 1px solid var(--color-accent-2-100);
+}
+.successful-cases__tapgerine {
+  grid-area: tapgerine;
+  border: 1px solid var(--color-accent-2-100);
+}
+
+.successful-cases__3d-look{
+  grid-area: d-look;
+  border: 1px solid var(--color-accent-2-100);
+}
+.successful-cases__adtelligent{
+  grid-area: adtelligent;
+  border: 1px solid var(--color-accent-2-100);
+}
+.successful-cases__clikky{
+  grid-area: clikky;
+  border: 1px solid var(--color-accent-2-100);
+}
+
+.successful-cases__text{
+  color: var(--color-main-500);
+  padding: 20px;
+  @include text-subheader;
+  display: flex;
+  align-items: flex-end;
+}
+.successful-cases__caption{
+  color: var(--color-secondary-800);
+  @include text-body;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.next-history{
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.next-history__button{
+  cursor: pointer;
+  &:focus-within{
+    border-color:var(--color-accent-1-800);
+    border: 1px solid;
+  }
+}
+.next-history__radio{
+  appearance: none;
+  position: absolute;
+
+  &:checked{
+    background-color: var(--color-accent-1-800);
+  }
+}
+.checkmark{
+  color: var(--color-main-500);
+  letter-spacing: 1px;
+  padding: 5px 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.3s background-color;
+}

@@ -1,29 +1,79 @@
+@import "reset";
+@import "variables-colors";
 
 
+@font-face {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../font_TTNorms/TTNorms-Bold.woff2") format('woff2');
+}
 
+@font-face {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../font_TTNorms/TTNorms-Medium.woff2")format('woff2');
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font_TTNorms/TTNorms-Regular.woff2") format('woff2');
+}
+.regular{
+  font-weight: 400;
+}
+.bold{
+  font-weight: 700;
+}
 @mixin text-headline{
   font-size: 4.2rem;
   line-height: (50/42);
 }
-@mixin text-title {
+@mixin text-title-hero{
+  font-size: 3.8rem;
+  line-height: (45/38);
+}
+@mixin text-title{
   font-size: 3.2rem;
   line-height: (38/32);
 }
-@mixin text-subheader {
+@mixin text-subheader{
   font-size: 2.4rem;
   line-height: (28/24);
 }
-@mixin text-caption {
+@mixin introduction{
+  font-size: 2.1rem;
+  line-height: (30/21);
+}
+@mixin text-caption{
   font-size: 1.8rem;
   line-height: (21/18);
 }
-@mixin text-small {
+@mixin text-body{
+  font-size: 1.8rem;
+  line-height: (26/18);
+}
+@mixin text-average{
+  font-size: 1.6rem;
+  line-height: (21/16);
+}
+@mixin text-medium{
+  font-size: 1.6rem;
+  line-height: (19/16);
+}
+@mixin text-small{
   font-size: 1.4rem;
   line-height: (17/14);
 }
-@mixin text-body {
-  font-size: 1.8rem;
-  line-height: (26/18);
+@mixin text-small-scale{
+  font-size: 1.2rem;
+  line-height: (14/12);
 }
 
 .ul{

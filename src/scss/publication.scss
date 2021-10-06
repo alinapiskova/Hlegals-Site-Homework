@@ -1,0 +1,104 @@
+.publication{
+  padding-top: 40px;
+  background-color: var(--color-secondary-100);
+  &::after{
+    content:'';
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border:2px solid var(--color-secondary-600);
+  }
+}
+.publication__wrapper{
+  position: relative;
+}
+.publication__title{
+  margin-top: 3px;
+  margin-bottom: 40px;
+  @include text-headline;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--gradient-redtext);
+}
+.publication__headline{
+  color: var(--color-primary-300);
+  @include text-caption;
+  font-weight: 400;
+  padding: 20px 20px 10px;
+}
+.publication__data{
+  color: var(--color-secondary-800);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 20px 20px;
+  &::after{
+    content:'';
+    display: block;
+    margin: 20px;
+    border:2px solid var(--color-secondary-600);
+  }
+}
+.publication__caption{
+  padding: 0 20px 20px;
+  font-weight: 400;
+  @include text-average;
+  color: var(--color-accent-3-900);
+}
+.publication__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.publication__cards{
+  width: 413px;
+  background-color: var(--color-accent-2-100);
+  border-radius: 8px;
+}
+.publication__card--first{
+
+}
+.publication__card--second{
+
+}
+.publication__card--third{
+
+}
+.publication__card--fourth{
+  margin-top: -195px;
+}
+.publication__card--fifth{
+
+}
+.publication__card--sixth{
+  margin-top: 22px;
+}
+.publication__img{
+  object-fit: cover;
+}
+.publication__show-more{
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-image:linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+}
+.publication__button{
+  background: var(--color-primary-300);
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  color: var(--color-accent-2-100);
+  padding: 17px 70px;
+  font-weight: 700;
+  @include text-small;
+}
